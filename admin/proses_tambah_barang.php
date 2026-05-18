@@ -1,0 +1,37 @@
+<?php
+
+
+include '../config/koneksi.php';
+
+if (isset($_POST['submit'])) {
+    $id_barang  = $_POST['id_barang'];
+    $kode_barang  = $_POST['kode_barang'];
+    $nama         = $_POST['nama_barang'];
+    $id_kategori  = $_POST['id_kategori'];
+    $id_supplier  = $_POST['id_supplier'];
+    $satuan       = $_POST['satuan'];
+    $stok         = $_POST['stok'];
+    $harga_beli   = $_POST['harga_beli'];
+    $harga_jual   = $_POST['harga_jual'];
+
+    $query = "INSERT INTO barang 
+    (id_barang,kode_barang, nama_barang, id_kategori, id_supplier, satuan, stok, harga_beli, harga_jual)
+    
+    VALUES 
+    
+    ('$id_barang','$kode_barang', '$nama', '$id_kategori', '$id_supplier', '$satuan', '$stok', '$harga_beli', '$harga_jual')";
+
+    $result = mysqli_query($koneksi, $query);
+
+    if ($result) {
+
+        echo "
+        <script>
+            alert('Data berhasil disimpan');
+            window.location='barang.php';
+        </script>";
+    } else {
+
+        echo "Query Error : " . mysqli_error($koneksi);
+    }
+}
