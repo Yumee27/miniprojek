@@ -43,8 +43,8 @@ include "dashboard.php";
                     <td><?= $data['harga_beli']; ?></td>
                     <td><?= $data['harga_jual']; ?></td>
                     <td>
-                        <a href="edit_barang.php" class="btn btn-warning">update</a>
-                        <a href="hapus_barang.php" class="btn btn-danger">hapus</a>
+                        <a href="edit_barang.php?id_barang=<?php echo $data['id_barang']; ?>" class="btn btn-warning">Update</a>
+                        <a href="hapus_barang.php?id_barang=<?php echo $data['id_barang']; ?>" class="btn btn-danger" onclick="return confirm('Yakin mau hapus?')">Hapus</a>
                     </td>
                 </tr>
 
