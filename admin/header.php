@@ -313,7 +313,7 @@
                         <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
-                        <p>Alexander Pierce</p>
+                        <p>Yume</p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="Barang.php"><i class="fa fa-folder"></i>Data Barang</a></li>
-                            <li class="active"><a href="Suplier.php"><i class="fa fa-car"></i> Data Suplier</a></li>
+                            <li><a href="Suplier.php"><i class="fa fa-car"></i> Data Suplier</a></li>
                             <li><a href="peminjaman.php"><i class="fa fa-money"></i> Peminjaman</a></li>
                             <li><a href="barang masuk.php"><i class="fa fa-plus"></i> Barang Masuk</a></li>
                             <li><a href="barang keluar.php"><i class="fa fa-minus"></i> Barang Keluar</a></li>

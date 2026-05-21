@@ -36,7 +36,7 @@ include "dashboard.php";
 
                 <tr>
                     <td><?= $no++; ?></td>
-                    <td><?= $data['kode_barang']; ?></td>
+                    <td><?= $data['kode_barang'] ?></td>
                     <td><?= $data['nama_barang']; ?></td>
                     <td><?= $data['satuan']; ?></td>
                     <td><?= $data['stok']; ?></td>
